@@ -1,0 +1,88 @@
+/* Just for looks */
+body {
+    background-color: #fab;
+  }
+  /* this is the background of the entire popup */
+  .login {
+      width: 64px;
+      height: 64px;
+      background-color: #4d4d4d;
+      border-radius: 32px;
+      position: absolute;
+      -webkit-transition:width 1s;
+      transition: width 1s;
+      overflow: hidden;
+  }
+  /* width then its slided out */
+  .login.out {
+      width: 422px;
+  }
+  /* The dark circle */
+  .circle {
+    background: #1a1a1a;
+    width: 58px;
+    height: 58px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 30px;
+}
+/* the quarter circles around the logo */
+.circle span:not(.logo) {
+    display: block;
+    width: 25px; 
+    height: 25px;
+    position: absolute;
+    background-color: #494949;
+    left: 3px;
+    top: 3px;
+}
+.circle span:nth-child(1) {
+    border-radius: 25px 0 0 0;
+    -moz-border-radius: 25px 0 0 0;
+    -webkit-border-radius: 25px 0 0 0;
+    background-color: #75aa1e; /* make the bar green */
+}
+.circle span:nth-child(2) {
+    border-radius: 0px 25px 0 0;
+    -moz-border-radius: 0 25px 0 0;
+    -webkit-border-radius: 0 25px 0 0;
+    left: 30px;
+}
+.circle span:nth-child(3) {
+    border-radius: 0 0 25px 0;
+    -moz-border-radius: 0 0 25px 0;
+    -webkit-border-radius: 0 0 25px 0;
+    left: 30px;
+    top: 30px;
+}
+.circle span:nth-child(4) {
+    border-radius: 0 0 0 25px;
+    -moz-border-radius: 0 0 0 25px;
+    -webkit-border-radius: 0 0 0 25px;
+    top: 30px;
+}
+  /* The logo in the middle of the circle */
+  .xbox-logo {
+      left: 16px;
+      top: 16px;
+      background-image: url("https://i.imgur.com/epUbaYQ.png");
+      background-size: 27px;
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      border: 2px solid #161616;
+      border-radius: 30px;
+  }
+  /* The achievement text */
+  .user-name {
+    position: absolute;
+    line-height: 1.2;
+    left: 85px;
+    color: #fff;
+    font-size: 1.6em;
+    white-space: nowrap
+  }
+

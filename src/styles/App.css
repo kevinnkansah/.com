@@ -1,0 +1,7 @@
+.login-container {
+    position: absolute;
+    top: 80%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's on top of other elements */
+  }

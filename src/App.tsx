@@ -1,13 +1,17 @@
-import RetroWindows7 from './components/RetroWindows7';
-import test from './components/test.tsx';
+import Login from './components/Login.tsx';
+import LoginBanner from './components/LoginBanner.tsx';
 import XboxDashboard from './components/XboxDashboard';
 
 function App() {
   return (
     <>
-      <XboxDashboard/>
+      <div className='login-container'>
+        <LoginBanner />
+      </div>
+      <XboxDashboard />
     </>
-  )
+  );
 }
+
 
 export default App

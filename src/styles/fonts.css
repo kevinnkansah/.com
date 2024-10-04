@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Convection';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Convection'), url('src/assets/fonts/Conv.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Convection';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Convection Bold'), url('/src/assets/fonts/Convb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Convection Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Convection Condensed'), url('/src/assets/fonts/Convc.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Convection Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Convection Medium'), url('/src/assets/fonts/Convmd.ttf') format('truetype');
+}
