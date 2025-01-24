@@ -1,17 +1,12 @@
-import Login from './components/Login.tsx';
-import LoginBanner from './components/LoginBanner.tsx';
-import XboxDashboard from './components/XboxDashboard';
+import RetroWindows7 from './components/RetroWindows7';
+import './styles/index.css';
 
 function App() {
   return (
-    <>
-      <div className='login-container'>
-        <LoginBanner />
-      </div>
-      <XboxDashboard />
-    </>
+    <div style={{ width: '100vw', height: '100vh', margin: 0, padding: 0, overflow: 'hidden' }}>
+      <RetroWindows7 />
+    </div>
   );
 }
 
-
-export default App
+export default App;

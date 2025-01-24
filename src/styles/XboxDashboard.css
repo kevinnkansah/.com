@@ -125,3 +125,81 @@ h1 {
   font-weight: 100;
   color: white;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .dashboard {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .left-slider-buttons, .right-slider-buttons {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .left-slider-buttons {
+    top: 0;
+  }
+
+  .right-slider-buttons {
+    bottom: 0;
+  }
+
+  .slider-button {
+    width: auto;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .button-label {
+    transform: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  .slider-wrapper {
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .slide {
+    padding: 15px;
+  }
+
+  .slide h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+  .slider-button:hover {
+    background-color: transparent;
+  }
+  
+  .slider-button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Larger Phones and Small Tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .slider-button {
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .button-label {
+    font-size: 1.1rem;
+  }
+}
